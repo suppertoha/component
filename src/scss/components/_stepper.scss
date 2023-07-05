@@ -1,0 +1,49 @@
+.stepper {
+  max-width: 180px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &__field {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    color: #1e1e1e;
+  }
+
+  &__input {
+    border: none;
+    background: transparent;
+    border: none;
+    width: 10px;
+    height: 100%;
+    outline: none;
+    font-weight: 500;
+    min-width: 1ex;
+  }
+
+  &__svg {
+    width: 10px;
+    height: 10px;
+    fill: #efeeee;
+  }
+
+  &__btn {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background: #1e1e1e;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+}
