@@ -1,13 +1,6 @@
-.page{
-  &__cards{
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+/*card-preview*/
 
 .card {
-
   &__inner {
     position: relative;
   }
@@ -38,7 +31,6 @@
   &__inner {
     display: flex;
     flex-direction: column;
-
   }
 
   &__block {
@@ -267,12 +259,10 @@
         margin-bottom: 20px;
       }
     }
-
   }
-
 }
 
-
+/*End card-preview*/
 
 
 

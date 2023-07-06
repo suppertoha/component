@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Detailed-card</title>
+
+    <!-- стили для fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+  </head>
+
+<body class="page__body">
+  <div class="container">
+    <!-- card-product -->
+      <div class="card-product">
+        <div class="card-product__inner">
+          <div class="card-product__items">
+            <div class="card-product__item">
+
+              <!-- card-slider-carousel -->
+
+<div class="swiper mySwiper2 card-product__slider   ">
+  <div class="swiper-wrapper">
+
+      <div class="swiper-slide slider-carousel__slide">
+        <a class="video" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+          <button class="video-play btn-reset">
+            <img loading="lazy" src="img/img-video.svg" class="image"  alt="img">
+          </button>
+        </a>
+      </div>
+
+      <div class="swiper-slide slider-carousel__slide">
+        <a class="image-link" data-fancybox="gallery" href="img/card-img.jpg">
+          <picture>
+            <source srcset="img/slide2.webp" type="image/webp">
+            <img loading="lazy" src="img/slide2.png" class="image"  alt="Slide 1">
+          </picture>
+        </a>
+      </div>
+
+      <div class="swiper-slide  slider-carousel__slide" >
+        <a class="image-link" data-fancybox="gallery" href="img/card-img.jpg">
+          <picture>
+            <source srcset="img/slide3.webp" type="image/webp">
+            <img loading="lazy" src="img/slide3.png" class="image"  alt="Slide 1">
+          </picture>
+        </a>
+      </div>
+
+      <div class="swiper-slide slider-carousel__slide">
+        <a class="image-link" data-fancybox="gallery" href="img/card-img.jpg">
+          <picture>
+            <source srcset="img/slide4.webp" type="image/webp">
+            <img loading="lazy" src="img/slide4.png" class="image"  alt="Slide 1">
+          </picture>
+        </a>
+      </div>
+
+      <div class="swiper-slide slider-carousel__slide">
+        <a class="image-link" data-fancybox="gallery" href="img/card-img.jpg">
+          <picture>
+            <source srcset="img/slide5.webp" type="image/webp">
+            <img loading="lazy" src="img/slide5.png" class="image"  alt="Slide 1">
+          </picture>
+        </a>
+      </div>
+
+      <div class="swiper-slide slider-carousel__slide">
+        <a class="image-link" data-fancybox="gallery" href="img/slide6.png">
+          <picture>
+            <source srcset="img/slide6.webp" type="image/webp">
+            <img loading="lazy" src="img/slide6.png" class="image"  alt="Slide 1">
+          </picture>
+        </a>
+      </div>
+  </div>
+</div>
+
+<!-- bottom slider -->
+<div class="swiper mySwiper gallery slider-carousel ">
+  <div class="swiper-wrapper gallery__wrapper">
+    <div class="gallery__image swiper-slide" >
+      <picture>
+        <source srcset="img/mini.webp" type="image/webp">
+        <img loading="lazy" src="img/mini.png"  class="image" alt="Slide 3">
+      </picture>
+    </div>
+    <div class="gallery__image swiper-slide"  >
+      <picture>
+        <source srcset="img/slide2.webp" type="image/webp">
+        <img loading="lazy" src="img/slide2.png"  class="image" alt="Slide 1">
+      </picture>
+    </div>
+
+    <div class="gallery__image swiper-slide" >
+      <picture>
+        <source srcset="img/slide3.webp" type="image/webp">
+        <img loading="lazy" src="img/slide3.png"  class="image" alt="Slide 3">
+      </picture>
+    </div>
+    <div class="gallery__image swiper-slide" >
+      <picture>
+        <source srcset="img/slide4.webp" type="image/webp">
+        <img loading="lazy" src="img/slide4.png"  class="image" alt="Slide 4">
+      </picture>
+    </div>
+    <div class="gallery__image swiper-slide" >
+      <picture>
+        <source srcset="img/slide5.webp" type="image/webp">
+        <img loading="lazy" src="img/slide5.png"  class="image" alt="Slide 5">
+      </picture>
+    </div>
+    <div class="gallery__image swiper-slide">
+      <picture>
+        <source srcset="img/slide6.webp" type="image/webp">
+        <img loading="lazy" src="img/slide6.png"  class="image" alt="Slide 6">
+      </picture>
+    </div>
+
+  </div>
+
+  <div class="swiper-button-next slider-carousel__next slider-carousel__btn"></div>
+  <div class="swiper-button-prev slider-carousel__prev slider-carousel__btn"></div>
+</div>
+
+<!--End card-slider-carousel -->
+
+              <div class="card-product__name name-h2">Описание</div>
+              <div class="card-product__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, neque!
+              </div>
+
+              <!-- characteristics -->
+
+<div class="card-product__name name-h2">
+  Технические характеристики
+</div>
+
+<ul class="card-product__characteristics characteristics">
+  <li class="characteristics__list">
+    <span class="characteristics__description"
+      >Артикул:</span
+    >
+    <span class="characteristics__result">4354565</span>
+  </li>
+
+  <li class="characteristics__list">
+    <span class="characteristics__description"
+      >Обьём:</span
+    >
+    <span class="characteristics__result">0,02 л</span>
+  </li>
+
+  <li class="characteristics__list">
+    <span class="characteristics__description">Вес:</span>
+    <span class="characteristics__result">5 г</span>
+  </li>
+
+  <li class="characteristics__list">
+    <span class="characteristics__description"
+      >Размер:</span
+    >
+    <span class="characteristics__result">15×12</span>
+  </li>
+
+  <li class="characteristics__list">
+    <span class="characteristics__description"
+      >Страна производитель:</span
+    >
+    <span class="characteristics__result">Китай</span>
+  </li>
+
+  <li class="characteristics__list">
+    <span class="characteristics__description">Год:</span>
+    <span class="characteristics__result">2023</span>
+  </li>
+</ul>
+
+<!--End characteristics -->
+
+              <!-- Отступы -->
+                    <br>
+                    <br>
+              <!--End Отступы -->
+            </div>
+
+            <div class="card-product__item">
+              <h1 class="card-product__title">
+                Очки «Пиксели» широкие
+              </h1>
+
+              <!-- price-block -->
+
+<div class="name-h2">Цены</div>
+
+<div class="price-block">
+  <ul class="price-block__inner">
+    <li class="price-block__item">
+      <div class="price-block__sum">50 ₽</div>
+      <div class="price-block__quantity">1-20 шт</div>
+    </li>
+
+    <li class="price-block__item">
+      <div class="price-block__sum">35 ₽</div>
+      <div class="price-block__quantity">21-98 шт</div>
+    </li>
+
+    <li class="price-block__item">
+      <div class="price-block__sum">25 ₽</div>
+      <div class="price-block__quantity">99-999 шт</div>
+    </li>
+  </ul>
+</div>
+
+<!--End price-block -->
+
+              <!-- Отступы -->
+                    <br>
+                    <br>
+              <!--End Отступы -->
+
+              <!-- delivery-buttons -->
+
+<div class="name-h2">Доставка</div>
+<ul class="delivery-button">
+  <li class="delivery-button__item">
+    <label class="radio-delivery">
+      <input type="radio" name="delivery" checked="" class="radio-delivery__input">
+      <span class="radio-delivery__button">Самовывоз</span>
+      <strong class="delivery-button__info">*бесплатно</strong>
+    </label>
+  </li>
+
+  <li class="delivery-button__item">
+    <label class=" radio-delivery">
+      <input type="radio" name="delivery" class="radio-delivery__input">
+      <span class="radio-delivery__button">Курьером</span>
+      <strong class="delivery-button__info">*стоимость доставки от 400 руб</strong>
+    </label>
+  </li>
+
+  <li class="delivery-button__item">
+    <label class=" radio-delivery">
+      <input type="radio" name="delivery" class="radio-delivery__input">
+      <span class="radio-delivery__button">СДЭК</span>
+      <strong class="delivery-button__info">*стоимость доставки от 300 руб</strong>
+    </label>
+  </li>
+
+  <li class="delivery-button__item">
+    <label class=" radio-delivery">
+      <input type="radio" name="delivery" class="radio-delivery__input">
+      <span class="radio-delivery__button">Почтой</span>
+      <strong class="delivery-button__info">*стоимость доставки от 330 руб</strong>
+    </label>
+  </li>
+</ul>
+
+<!--End delivery-buttons -->
+
+              <!-- Отступы -->
+                    <br>
+                    <br>
+              <!--End Отступы -->
+
+              <!-- market-play-list -->
+
+<div class="name-h2">Маркетплейсы</div>
+<ul class="list-button">
+  <li class="list-button__element">
+    <a
+      target="_blank"
+      href="https://www.ozon.ru/"
+      class="list-button__link"
+    >
+      <img
+        loading="lazy"
+        src="img/ozon.png"
+        class="list-button__image"
+        alt="PlushStory"
+      />
+      <div class="list-button__contain">
+        <span>Купить на</span>
+        Ozon
+      </div>
+    </a>
+  </li>
+  <li class="list-button__element">
+    <a
+      target="_blank"
+      href="https://www.wildberries.ru/"
+      class="list-button__link"
+    >
+      <img
+        loading="lazy"
+        src="img/wildberries.png"
+        class="list-button__image"
+        alt="PlushStory"
+      />
+      <div class="footer__contain">
+        <span>Купить на</span>
+        Wildberries
+      </div>
+    </a>
+  </li>
+  <li class="list-button__element">
+    <a
+      target="_blank"
+      href="https://market.yandex.ru/"
+      class="list-button__link"
+    >
+      <img
+        loading="lazy"
+        src="img/yandex.png"
+        class="list-button__image"
+        alt="PlushStory"
+      />
+      <div class="footer__contain">
+        <span>Купить на</span>
+        Яндекс Маркете
+      </div>
+    </a>
+  </li>
+</ul>
+
+<!--End market-play-list -->
+
+              <!-- Отступы -->
+                    <br>
+                    <br>
+              <!--End Отступы -->
+
+              <!-- product-cart -->
+
+<div class="name-h2">Цвет</div>
+
+<div class="product-cart">
+  <ul class="product-cart__inner">
+    <li class="product-cart__item">
+      <div class="product-cart__img">
+        <picture>
+          <source
+            srcset="img/product-cart.webp"
+            type="image/webp"
+          />
+          <img
+            loading="lazy"
+            src="img/product-cart.png"
+            class="image"
+            width=""
+            height=""
+            alt="product"
+          />
+        </picture>
+      </div>
+
+      <div class="product-cart__description">
+        <span class="product-cart__text"
+          >Цвет Жёлтый</span
+        >
+      </div>
+
+      <span class="product-cart__quantity">
+        В наличие 15 шт
+      </span>
+
+      <!-- stepper -->
+        <!-- stepper -->
+
+<div class="stepper">
+  <button
+    class="stepper__btn stepper__btn--down stepper__btn--disabled"
+    aria-label="Уменьшить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#minus"></use>
+    </svg>
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="6" class="stepper__input" />
+    <span class="stepper__text">шт</span>
+  </label>
+  <button
+    class="stepper__btn stepper__btn--up"
+    aria-label="Увеличить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#plus"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- End stepper -->
+
+      <!--End stepper -->
+    </li>
+
+    <li class="product-cart__item">
+      <div class="product-cart__img">
+        <picture>
+          <source
+            srcset="img/product-cart.webp"
+            type="image/webp"
+          />
+          <img
+            loading="lazy"
+            src="img/product-cart.png"
+            class="image"
+            width=""
+            height=""
+            alt="product"
+          />
+        </picture>
+      </div>
+
+      <div class="product-cart__description">
+        <span class="product-cart__text"
+          >Цвет Чёрный</span
+        >
+
+        <span class="product-cart__text">Размер: S</span>
+      </div>
+
+      <span class="product-cart__quantity">
+        В наличие 15 шт
+      </span>
+      <!-- stepper -->
+        <!-- stepper -->
+
+<div class="stepper">
+  <button
+    class="stepper__btn stepper__btn--down stepper__btn--disabled"
+    aria-label="Уменьшить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#minus"></use>
+    </svg>
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="6" class="stepper__input" />
+    <span class="stepper__text">шт</span>
+  </label>
+  <button
+    class="stepper__btn stepper__btn--up"
+    aria-label="Увеличить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#plus"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- End stepper -->
+
+      <!--End stepper -->
+    </li>
+
+    <li class="product-cart__item">
+      <div class="product-cart__img">
+        <picture>
+          <source
+            srcset="img/product-cart.webp"
+            type="image/webp"
+          />
+          <img
+            loading="lazy"
+            src="img/product-cart.png"
+            class="image"
+            width=""
+            height=""
+            alt="product"
+          />
+        </picture>
+      </div>
+
+      <div class="product-cart__description">
+        <span class="product-cart__text"
+          >Цвет Красный</span
+        >
+
+        <span class="product-cart__text">Размер: </span>
+
+      <!-- btn-el -->
+        <!-- btn-el -->
+
+<ul class="btn-el">
+  <li class="btn-el__item">
+    <label class="btn-el__radio">
+      <input
+        type="radio"
+        name="toggle"
+        checked=""
+        class="radio__input"
+      />
+      <span class="btn-el__button">XS</span>
+    </label>
+  </li>
+  <li class="btn-el__item">
+    <label class="btn-el__radio">
+      <input
+        type="radio"
+        name="toggle"
+        class="radio__input"
+      />
+      <span class="btn-el__button">S</span>
+    </label>
+  </li>
+
+  <li class="btn-el__item">
+    <label class="btn-el__radio">
+      <input
+        type="radio"
+        name="toggle"
+        class="radio__input"
+      />
+      <span class="btn-el__button">M</span>
+    </label>
+  </li>
+
+  <li class="btn-el__item">
+    <label class="btn-el__radio">
+      <input
+        type="radio"
+        name="toggle"
+        class="radio__input"
+      />
+      <span class="btn-el__button">L</span>
+    </label>
+  </li>
+
+  <li class="btn-el__item">
+    <label class="btn-el__radio">
+      <input
+        type="radio"
+        name="toggle"
+        class="radio__input"
+      />
+      <span class="btn-el__button">XL</span>
+    </label>
+  </li>
+</ul>
+
+<!--End btn-el -->
+
+      <!--End btn-el -->
+
+      </div>
+
+      <span class="product-cart__quantity">
+        В наличие 15 шт
+      </span>
+
+      <!-- stepper -->
+        <!-- stepper -->
+
+<div class="stepper">
+  <button
+    class="stepper__btn stepper__btn--down stepper__btn--disabled"
+    aria-label="Уменьшить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#minus"></use>
+    </svg>
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="6" class="stepper__input" />
+    <span class="stepper__text">шт</span>
+  </label>
+  <button
+    class="stepper__btn stepper__btn--up"
+    aria-label="Увеличить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#plus"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- End stepper -->
+
+      <!--End stepper -->
+    </li>
+
+    <li class="product-cart__item">
+      <div class="product-cart__img">
+        <picture>
+          <source
+            srcset="img/product-cart.webp"
+            type="image/webp"
+          />
+          <img
+            loading="lazy"
+            src="img/product-cart.png"
+            class="image"
+            width=""
+            height=""
+            alt="product"
+          />
+        </picture>
+      </div>
+
+      <div class="product-cart__description">
+        <span class="product-cart__text"
+          >Цвет Жёлтый</span
+        >
+      </div>
+
+      <span class="product-cart__quantity">
+        В наличие 15 шт
+      </span>
+
+      <!-- stepper -->
+        <!-- stepper -->
+
+<div class="stepper">
+  <button
+    class="stepper__btn stepper__btn--down stepper__btn--disabled"
+    aria-label="Уменьшить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#minus"></use>
+    </svg>
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="6" class="stepper__input" />
+    <span class="stepper__text">шт</span>
+  </label>
+  <button
+    class="stepper__btn stepper__btn--up"
+    aria-label="Увеличить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#plus"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- End stepper -->
+
+      <!--End stepper -->
+    </li>
+  </ul>
+</div>
+
+<!--End product-cart -->
+
+              <!-- Отступы -->
+                  <br>
+                  <br>
+              <!--End Отступы -->
+
+              <!-- total-card -->
+
+<div class="name-h2">
+  ИТОГО
+</div>
+
+<ul class="total-card">
+  <li class="total-card__item">
+    <span
+      class="total-card__total"
+    >
+      1260 ₽
+    </span>
+  </li>
+  <li class="total-card__item">
+
+    <div class="total-card__stepper">
+      <!-- stepper -->
+
+<div class="stepper">
+  <button
+    class="stepper__btn stepper__btn--down stepper__btn--disabled"
+    aria-label="Уменьшить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#minus"></use>
+    </svg>
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="6" class="stepper__input" />
+    <span class="stepper__text">шт</span>
+  </label>
+  <button
+    class="stepper__btn stepper__btn--up"
+    aria-label="Увеличить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#plus"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- End stepper -->
+
+    </div>
+
+  </li>
+  <li class="total-card__item">
+    <button class="total-card__button">
+      В корзину
+    </button>
+  </li>
+</ul>
+
+<!--End total-card -->
+
+              <!-- Отступы -->
+                  <br>
+                  <br>
+              <!--End Отступы -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    <!--End card-product -->
+  </div>
+
+  <!-- Скрипты для подключения fancybox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <!-- Работает только эта версия слайдера по клику на нижний слайдер перебросит на верх -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

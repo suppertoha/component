@@ -1,3 +1,5 @@
+/*Stepper*/
+
 const steppers = document.querySelectorAll(".stepper");
 
 if (steppers.length > 0) {
@@ -135,3 +137,5 @@ if (steppers.length > 0) {
     });
   });
 }
+
+/*End Stepper*/

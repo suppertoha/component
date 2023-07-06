@@ -1,0 +1,109 @@
+/* price-block */
+
+.price-block {
+  &__inner {
+    display: flex;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0;
+      bottom: 0;
+      border-radius: 15px;
+      padding: 3px;
+      z-index: -1;
+      background: -o-linear-gradient(left, #ad6ed3 0%, #efa1c3 100%);
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#ad6ed3),
+        to(#efa1c3)
+      );
+      background: linear-gradient(90deg, #ad6ed3 0%, #efa1c3 100%);
+      -webkit-mask: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0, #fff)
+          )
+          content-box,
+        -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
+  }
+
+  &__item {
+    width: 33.3333%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    &:not(:first-child) {
+      &:before {
+        content: "";
+        display: inline-block;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+        border-radius: 15px;
+        padding: 2px;
+        z-index: -1;
+        background: -o-linear-gradient(left, #ad6ed3 0%, #efa1c3 100%);
+        background: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(#ad6ed3),
+          to(#efa1c3)
+        );
+        background: linear-gradient(90deg, #ad6ed3 0%, #efa1c3 100%);
+        -webkit-mask: -webkit-gradient(
+              linear,
+              left top,
+              left bottom,
+              color-stop(0, #fff)
+            )
+            content-box,
+          -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+      }
+    }
+  }
+
+  &__sum {
+    font-size: 18px;
+    line-height: 1;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+  }
+
+  &__quantity {
+    font-size: 16px;
+    line-height: 1.3;
+    color: rgba(30, 30, 30, 0.5);
+  }
+}
+
+/*End price-block */

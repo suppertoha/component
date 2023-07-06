@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Detailed-card</title>
+
+    <!-- стили для fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+  </head>
+
+
+
+
+<body class="page__body">
+  <div class="container">
+    <!-- card-product -->
+      <div class="card-product">
+        <div class="card-product__inner">
+          <div class="card-product__items">
+            <div class="card-product__item">
+
+              @include('partials/card-slider-carousel.html')
+
+              <div class="card-product__name name-h2">Описание</div>
+              <div class="card-product__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, neque!
+              </div>
+
+              @include('partials/characteristics.html')
+              <!-- Отступы -->
+                    <br>
+                    <br>
+              <!--End Отступы -->
+            </div>
+
+            <div class="card-product__item">
+              <h1 class="card-product__title">
+                Очки “Пиксели” широкие
+              </h1>
+
+              @include('partials/price-block.html')
+              <!-- Отступы -->
+                    <br>
+                    <br>
+              <!--End Отступы -->
+
+              @include('partials/delivery-buttons.html')
+              <!-- Отступы -->
+                    <br>
+                    <br>
+              <!--End Отступы -->
+
+              @include('partials/market-play-list.html')
+              <!-- Отступы -->
+                    <br>
+                    <br>
+              <!--End Отступы -->
+
+              @include('partials/product-cart.html')
+              <!-- Отступы -->
+                  <br>
+                  <br>
+              <!--End Отступы -->
+
+              @include('partials/total-card.html')
+              <!-- Отступы -->
+                  <br>
+                  <br>
+              <!--End Отступы -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    <!--End card-product -->
+  </div>
+
+  <!-- Скрипты для подключения fancybox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <!-- Работает только эта версия слайдера по клику на нижний слайдер перебросит на верх -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

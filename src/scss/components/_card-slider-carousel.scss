@@ -1,0 +1,218 @@
+/*card-slider-carousel*/
+
+.slider-carousel {
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  &__slide {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: inherit;
+    overflow: hidden;
+    border-radius: 15px;
+
+    iframe,
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border: none;
+    }
+
+    a {
+      align-self: center;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 20px;
+    height: 100%;
+    background: #ad6ed3;
+    border-radius: 15px;
+    transition: 0.3s;
+    top: auto;
+    margin-top: 0;
+
+    @include min1024 {
+      &:hover {
+        background: #efa1c3;
+      }
+    }
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+}
+
+.gallery {
+  height: 60px;
+  padding: 0 30px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px auto 60px;
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    padding: 0 5px;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    color: #fff;
+    font-size: 14px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+  }
+
+  &__image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 58px;
+    height: 40px;
+    transition: 0.3s;
+    padding: 5px 3px;
+    padding-left: 8px;
+    &:after {
+      content: "";
+      display: inline-block;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0;
+      bottom: 0;
+      border-radius: 5px;
+      padding: 2px;
+      z-index: 1;
+      background: transparent;
+    }
+
+    &.swiper-slide-thumb-active {
+      &:after {
+        background: -o-linear-gradient(left, #ad6ed3 0%, #efa1c3 100%);
+        background: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(#ad6ed3),
+          to(#efa1c3)
+        );
+        background: linear-gradient(90deg, #ad6ed3 0%, #efa1c3 100%);
+        -webkit-mask: -webkit-gradient(
+              linear,
+              left top,
+              left bottom,
+              color-stop(0, #fff)
+            )
+            content-box,
+          -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+      }
+    }
+
+    picture {
+      display: flex;
+      align-items: flex-start;
+    }
+
+
+    @include min1024 {
+      &:hover {
+
+        &:after {
+          background: -o-linear-gradient(left, #ad6ed3 0%, #efa1c3 100%);
+          background: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            from(#ad6ed3),
+            to(#efa1c3)
+          );
+          background: linear-gradient(90deg, #ad6ed3 0%, #efa1c3 100%);
+          -webkit-mask: -webkit-gradient(
+                linear,
+                left top,
+                left bottom,
+                color-stop(0, #fff)
+              )
+              content-box,
+            -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+          -webkit-mask: linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+          -webkit-mask-composite: destination-out;
+          mask-composite: exclude;
+        }
+      }
+
+    }
+  }
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  min-height: 100%;
+  display: inline-block;
+  background: #efa1c3;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.video-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+}
+
+/*End card-slider-carousel*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

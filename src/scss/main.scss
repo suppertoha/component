@@ -5,9 +5,20 @@
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/cards";
-@import "./components/text-dropdown";
-@import "./components/stepper";
-@import "./components/price";
+@import "./components/_index";
+@import "./components/_buttons";
+@import "./components/_delivery-buttons";
+
+@import "./components/_cards";
+@import "./components/_text-dropdown";
+@import "./components/_stepper";
+@import "./components/_price";
+@import "./components/_detailed-card";
+@import "./components/_price-block";
+@import "./components/_btn-el";
+@import "./components/_total-card";
+@import "./components/_characteristics";
+@import "./components/_card-slider-carousel";
+@import "./components/_product-cart";
 
 

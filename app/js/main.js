@@ -13,8 +13,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_text_dropdown__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_text_dropdown__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_stepper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/stepper */ "./src/js/components/stepper.js");
 /* harmony import */ var _components_stepper__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_stepper__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_price_card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/price-card */ "./src/js/components/price-card.js");
-/* harmony import */ var _components_price_card__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_price_card__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_card_mouse_hover__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/card-mouse-hover */ "./src/js/components/card-mouse-hover.js");
+/* harmony import */ var _components_card_mouse_hover__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_card_mouse_hover__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_card_slider_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/card-slider-carousel */ "./src/js/components/card-slider-carousel.js");
+/* harmony import */ var _components_card_slider_carousel__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_card_slider_carousel__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -153,11 +156,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/js/components/price-card.js":
-/*!*****************************************!*\
-  !*** ./src/js/components/price-card.js ***!
-  \*****************************************/
+/***/ "./src/js/components/card-mouse-hover.js":
+/*!***********************************************!*\
+  !*** ./src/js/components/card-mouse-hover.js ***!
+  \***********************************************/
 /***/ (() => {
+
+/*CardMouseHover*/
 
 const initCard = () => {
   const cards = document.querySelectorAll('.card');
@@ -181,6 +186,49 @@ const initCard = () => {
 };
 initCard();
 
+/*End CardMouseHover*/
+
+/***/ }),
+
+/***/ "./src/js/components/card-slider-carousel.js":
+/*!***************************************************!*\
+  !*** ./src/js/components/card-slider-carousel.js ***!
+  \***************************************************/
+/***/ (() => {
+
+/*card-slider-carousel*/
+
+const mainSliderContainer = document.querySelector(".mySwiper");
+const thumbsSliderContainer = document.querySelector(".mySwiper2");
+if (mainSliderContainer && thumbsSliderContainer) {
+  const mainSlider = new Swiper(mainSliderContainer, {
+    loop: true,
+    spaceBetween: 5,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: ".slider-carousel__next",
+      prevEl: ".slider-carousel__prev"
+    },
+    breakpoints: {
+      600: {
+        spaceBetween: 10,
+        slidesPerView: 5
+      }
+    }
+  });
+  const thumbsSlider = new Swiper(thumbsSliderContainer, {
+    loop: true,
+    spaceBetween: 10,
+    thumbs: {
+      swiper: mainSlider
+    }
+  });
+}
+
+/*End card-slider-carousel*/
+
 /***/ }),
 
 /***/ "./src/js/components/stepper.js":
@@ -188,6 +236,8 @@ initCard();
   !*** ./src/js/components/stepper.js ***!
   \**************************************/
 /***/ (() => {
+
+/*Stepper*/
 
 const steppers = document.querySelectorAll(".stepper");
 if (steppers.length > 0) {
@@ -302,6 +352,8 @@ if (steppers.length > 0) {
   });
 }
 
+/*End Stepper*/
+
 /***/ }),
 
 /***/ "./src/js/components/text-dropdown.js":
@@ -309,6 +361,8 @@ if (steppers.length > 0) {
   !*** ./src/js/components/text-dropdown.js ***!
   \********************************************/
 /***/ (() => {
+
+/*Text-dropdown*/
 
 const initText = () => {
   const texts = document.querySelectorAll('.js-text');
@@ -334,6 +388,8 @@ const initText = () => {
   });
 };
 initText();
+
+/*End Text-dropdown*/
 
 /***/ }),
 

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Component</title>
+  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="container">
+    <div class="page__cards">
+      <!-- card -->
+
+<div class="card">
+  <div class="card__inner">
+    <div class="card__body">
+      <div class="card__block">
+
+        <div class="card__head">
+          <button class="card__button card__button--top card__button--orange">Кнопка 1</button>
+          <button class="card__button card__button--top card__button--blue">Кнопка 2</button>
+          <button class="card__button card__button--top card__button--pink">Кнопка 3</button>
+        </div>
+
+        <div class="card__buttons">
+          <button class="card__button card__button--icon">
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </button>
+
+          <button class="card__button card__button--icon">
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </button>
+
+          <button class="card__button card__button--icon">
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </button>
+        </div>
+
+        <a href="#" class="card__link">
+          <picture class="card__img">
+            <source srcset="img/card-img.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              src="img/card-img.jpg"
+              class="image"
+              alt="img"
+            />
+          </picture>
+        </a>
+      </div>
+
+      <div class="card__content">
+        <div class="card__name">
+          Очень длинное название Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, impedit beatae! Explicabo adipisci assumenda esse eligendi?
+        </div>
+
+        <!-- text-dropdown -->
+
+<div class="js-text">
+  <div class="js-text__content">
+    <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi in mollitia praesentium ratione et aliquid obcaecati nihil? Perferendis non cupiditate, deserunt eum ex maxime architecto sit, at, dolore eaque doloribus!
+    </p>
+    <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi in mollitia praesentium ratione et aliquid obcaecati nihil? Perferendis non cupiditate, deserunt eum ex maxime architecto sit, at, dolore eaque doloribus!
+    </p>
+  </div>
+  <button class="js-text__more-button" type="button" data-opening-text="Подробнее" data-closing-text="Свернуть">Подробнее</button>
+</div>
+
+<!-- End text-dropdown -->
+
+      </div>
+
+      <div class="card__stepper">
+        <!-- stepper -->
+
+<div class="stepper">
+  <button
+    class="stepper__btn stepper__btn--down stepper__btn--disabled"
+    aria-label="Уменьшить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#minus"></use>
+    </svg>
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="6" class="stepper__input" />
+    <span class="stepper__text">шт</span>
+  </label>
+  <button
+    class="stepper__btn stepper__btn--up"
+    aria-label="Увеличить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#plus"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- End stepper -->
+
+        <!-- stepper -->
+
+<div class="stepper">
+  <button
+    class="stepper__btn stepper__btn--down stepper__btn--disabled"
+    aria-label="Уменьшить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#minus"></use>
+    </svg>
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="6" class="stepper__input" />
+    <span class="stepper__text">шт</span>
+  </label>
+  <button
+    class="stepper__btn stepper__btn--up"
+    aria-label="Увеличить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#plus"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- End stepper -->
+
+      </div>
+    </div>
+
+    <div class="card__bottom">
+      <div class="card__price price-card">
+        <div class="price-card__inner">
+          <div class="price-card__item">
+            <div class="price-card__sum">50 ₽</div>
+            <div class="price-card__quantity">1-20 шт</div>
+          </div>
+
+          <div class="price-card__item">
+            <div class="price-card__sum">35 ₽</div>
+            <div class="price-card__quantity">21-98 шт</div>
+          </div>
+
+          <div class="price-card__item">
+            <div class="price-card__sum">25 ₽</div>
+            <div class="price-card__quantity">99-999 шт</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="card__button card__button--big"><span>В корзину</span></button>
+    </div>
+
+  </div>
+</div>
+
+<!--End card -->
+
+      <!-- card -->
+
+<div class="card">
+  <div class="card__inner">
+    <div class="card__body">
+      <div class="card__block">
+
+        <div class="card__head">
+          <button class="card__button card__button--top card__button--orange">Кнопка 1</button>
+          <button class="card__button card__button--top card__button--blue">Кнопка 2</button>
+          <button class="card__button card__button--top card__button--pink">Кнопка 3</button>
+        </div>
+
+        <div class="card__buttons">
+          <button class="card__button card__button--icon">
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </button>
+
+          <button class="card__button card__button--icon">
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </button>
+
+          <button class="card__button card__button--icon">
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </button>
+        </div>
+
+        <a href="#" class="card__link">
+          <picture class="card__img">
+            <source srcset="img/card-img.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              src="img/card-img.jpg"
+              class="image"
+              alt="img"
+            />
+          </picture>
+        </a>
+      </div>
+
+      <div class="card__content">
+        <div class="card__name">
+          Очень длинное название Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, impedit beatae! Explicabo adipisci assumenda esse eligendi?
+        </div>
+
+        <!-- text-dropdown -->
+
+<div class="js-text">
+  <div class="js-text__content">
+    <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi in mollitia praesentium ratione et aliquid obcaecati nihil? Perferendis non cupiditate, deserunt eum ex maxime architecto sit, at, dolore eaque doloribus!
+    </p>
+    <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi in mollitia praesentium ratione et aliquid obcaecati nihil? Perferendis non cupiditate, deserunt eum ex maxime architecto sit, at, dolore eaque doloribus!
+    </p>
+  </div>
+  <button class="js-text__more-button" type="button" data-opening-text="Подробнее" data-closing-text="Свернуть">Подробнее</button>
+</div>
+
+<!-- End text-dropdown -->
+
+      </div>
+
+      <div class="card__stepper">
+        <!-- stepper -->
+
+<div class="stepper">
+  <button
+    class="stepper__btn stepper__btn--down stepper__btn--disabled"
+    aria-label="Уменьшить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#minus"></use>
+    </svg>
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="6" class="stepper__input" />
+    <span class="stepper__text">шт</span>
+  </label>
+  <button
+    class="stepper__btn stepper__btn--up"
+    aria-label="Увеличить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#plus"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- End stepper -->
+
+        <!-- stepper -->
+
+<div class="stepper">
+  <button
+    class="stepper__btn stepper__btn--down stepper__btn--disabled"
+    aria-label="Уменьшить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#minus"></use>
+    </svg>
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="6" class="stepper__input" />
+    <span class="stepper__text">шт</span>
+  </label>
+  <button
+    class="stepper__btn stepper__btn--up"
+    aria-label="Увеличить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#plus"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- End stepper -->
+
+      </div>
+    </div>
+
+    <div class="card__bottom">
+      <div class="card__price price-card">
+        <div class="price-card__inner">
+          <div class="price-card__item">
+            <div class="price-card__sum">50 ₽</div>
+            <div class="price-card__quantity">1-20 шт</div>
+          </div>
+
+          <div class="price-card__item">
+            <div class="price-card__sum">35 ₽</div>
+            <div class="price-card__quantity">21-98 шт</div>
+          </div>
+
+          <div class="price-card__item">
+            <div class="price-card__sum">25 ₽</div>
+            <div class="price-card__quantity">99-999 шт</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="card__button card__button--big"><span>В корзину</span></button>
+    </div>
+
+  </div>
+</div>
+
+<!--End card -->
+
+      <!-- card -->
+
+<div class="card">
+  <div class="card__inner">
+    <div class="card__body">
+      <div class="card__block">
+
+        <div class="card__head">
+          <button class="card__button card__button--top card__button--orange">Кнопка 1</button>
+          <button class="card__button card__button--top card__button--blue">Кнопка 2</button>
+          <button class="card__button card__button--top card__button--pink">Кнопка 3</button>
+        </div>
+
+        <div class="card__buttons">
+          <button class="card__button card__button--icon">
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </button>
+
+          <button class="card__button card__button--icon">
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </button>
+
+          <button class="card__button card__button--icon">
+            <svg class="card__icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </button>
+        </div>
+
+        <a href="#" class="card__link">
+          <picture class="card__img">
+            <source srcset="img/card-img.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              src="img/card-img.jpg"
+              class="image"
+              alt="img"
+            />
+          </picture>
+        </a>
+      </div>
+
+      <div class="card__content">
+        <div class="card__name">
+          Очень длинное название Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, impedit beatae! Explicabo adipisci assumenda esse eligendi?
+        </div>
+
+        <!-- text-dropdown -->
+
+<div class="js-text">
+  <div class="js-text__content">
+    <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi in mollitia praesentium ratione et aliquid obcaecati nihil? Perferendis non cupiditate, deserunt eum ex maxime architecto sit, at, dolore eaque doloribus!
+    </p>
+    <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi in mollitia praesentium ratione et aliquid obcaecati nihil? Perferendis non cupiditate, deserunt eum ex maxime architecto sit, at, dolore eaque doloribus!
+    </p>
+  </div>
+  <button class="js-text__more-button" type="button" data-opening-text="Подробнее" data-closing-text="Свернуть">Подробнее</button>
+</div>
+
+<!-- End text-dropdown -->
+
+      </div>
+
+      <div class="card__stepper">
+        <!-- stepper -->
+
+<div class="stepper">
+  <button
+    class="stepper__btn stepper__btn--down stepper__btn--disabled"
+    aria-label="Уменьшить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#minus"></use>
+    </svg>
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="6" class="stepper__input" />
+    <span class="stepper__text">шт</span>
+  </label>
+  <button
+    class="stepper__btn stepper__btn--up"
+    aria-label="Увеличить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#plus"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- End stepper -->
+
+        <!-- stepper -->
+
+<div class="stepper">
+  <button
+    class="stepper__btn stepper__btn--down stepper__btn--disabled"
+    aria-label="Уменьшить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#minus"></use>
+    </svg>
+  </button>
+  <label class="stepper__field">
+    <input type="text" value="1" maxlength="6" class="stepper__input" />
+    <span class="stepper__text">шт</span>
+  </label>
+  <button
+    class="stepper__btn stepper__btn--up"
+    aria-label="Увеличить количество"
+  >
+    <svg class="stepper__svg">
+      <use xlink:href="img/sprite.svg#plus"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- End stepper -->
+
+      </div>
+    </div>
+
+    <div class="card__bottom">
+      <div class="card__price price-card">
+        <div class="price-card__inner">
+          <div class="price-card__item">
+            <div class="price-card__sum">50 ₽</div>
+            <div class="price-card__quantity">1-20 шт</div>
+          </div>
+
+          <div class="price-card__item">
+            <div class="price-card__sum">35 ₽</div>
+            <div class="price-card__quantity">21-98 шт</div>
+          </div>
+
+          <div class="price-card__item">
+            <div class="price-card__sum">25 ₽</div>
+            <div class="price-card__quantity">99-999 шт</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="card__button card__button--big"><span>В корзину</span></button>
+    </div>
+
+  </div>
+</div>
+
+<!--End card -->
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus magni unde est dolores vitae, maiores laboriosam, quidem odit distinctio voluptatibus magnam eos facere sequi nisi porro molestiae placeat eveniet nostrum animi repudiandae? Vel, perspiciatis eum! Omnis accusantium ab saepe est dolores excepturi! Voluptas, deleniti unde! Reiciendis assumenda repellat accusamus corrupti ipsum? Adipisci velit doloribus laborum, perspiciatis iste vel, excepturi voluptas nisi pariatur repellendus accusantium ab cum a repellat? Debitis consectetur neque voluptatem perferendis vitae cumque quibusdam, nam qui rerum aliquam libero. Quod, similique magnam! Quae praesentium eaque adipisci deleniti veniam distinctio repellendus unde ducimus. Et beatae deleniti iusto quam expedita.
+  </div>
+</body>
+
+</html>

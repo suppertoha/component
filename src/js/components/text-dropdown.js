@@ -1,3 +1,5 @@
+/*Text-dropdown*/
+
 const initText = () => {
   const texts = document.querySelectorAll('.js-text');
   if (!texts) return;
@@ -24,3 +26,5 @@ const initText = () => {
 };
 
 initText();
+
+/*End Text-dropdown*/

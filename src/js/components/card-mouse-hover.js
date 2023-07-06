@@ -1,3 +1,5 @@
+/*CardMouseHover*/
+
 const initCard = () => {
   const cards = document.querySelectorAll('.card');
   if (!cards) return;
@@ -11,7 +13,7 @@ const initCard = () => {
 
     const priceCard = cardBottom.querySelector('.price-card');
     if (!priceCard) return;
-    
+
     cardBottom.style.bottom = `-${cardHeight}px`;
 
     card.addEventListener('mouseover', () => {
@@ -27,6 +29,7 @@ const initCard = () => {
 
 initCard();
 
+/*End CardMouseHover*/
 
 
 

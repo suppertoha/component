@@ -1,0 +1,24 @@
+/*page*/
+
+*ul, li{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.page{
+  &__cards{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.site-menu {
+  padding: 10px;
+  &__item {
+    margin-bottom: 10px;
+  }
+}
+
+/*End page*/

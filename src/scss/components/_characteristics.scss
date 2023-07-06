@@ -1,0 +1,51 @@
+/*characteristics*/
+
+.characteristics {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 1;
+    color: rgba(30, 30, 30, 0.5);
+
+    span {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @include max1600 {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      span {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+
+      font-size: 16px;
+    }
+
+
+
+    @include max600 {
+      font-size: 14px;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__result{
+    margin-left: auto;
+  }
+
+}
+
+/*End characteristics*/

@@ -1,0 +1,43 @@
+/* card-product */
+
+.card-product {
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    width: 50%;
+    &:nth-child(1) {
+      width: 44%;
+    }
+    &:nth-child(2) {
+      width: 54%;
+    }
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #1e1e1e;
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 1.4;
+    color: #1e1e1e;
+    margin-bottom: 30px;
+  }
+}
+
+.name-h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  color: #1e1e1e;
+}
+
+/* End card-product */
